@@ -124,6 +124,15 @@ nav {
   font-size: 1.5em;
 }
 
+.Signup {
+  text-decoration: none;
+  color: black;
+}
+
+.Signup:hover {
+  color: white;
+}
+
 /*-----------------about us -------------------*/
 .about-us {
   grid-area: Au;
@@ -196,8 +205,6 @@ nav {
   background-position-x: initial;
   background-position-y: initial;
   background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -257,10 +264,18 @@ nav {
 }
 
 @media screen and (max-width: 621px) {
-    nav {
+  .grid-container {
+    width: 100%;
+  } 
+
+  nav {
       width: 100%;
     }
     
+    .link {
+      display: none;
+    }
+
     .hero-text {
       width: 40em;
       color: white;
@@ -289,7 +304,7 @@ nav {
     }
 
     .aboutus-img {
-      width: 30em;
+      width: auto;
       height: 18em;
       border-radius: 1em;
     }
